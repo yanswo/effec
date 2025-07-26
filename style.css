@@ -168,48 +168,48 @@ button {
 }
 @font-face {
   font-family: FixelDisplay-Regular;
-  src: url(../fonts/FixelDisplay-Regular.9dc7ab88.ttf) format("truetype"),
-    url(../fonts/FixelDisplay-Regular.410b2fa1.woff2) format("woff2");
+  src: url(fonts/FixelDisplay-Regular.9dc7ab88.ttf) format("truetype"),
+    url(fonts/FixelDisplay-Regular.410b2fa1.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: FixelDisplay-Medium;
-  src: url(../fonts/FixelDisplay-Medium.baf8001e.ttf) format("truetype"),
-    url(../fonts/FixelDisplay-Medium.736d6950.woff2) format("woff2");
+  src: url(fonts/FixelDisplay-Medium.baf8001e.ttf) format("truetype"),
+    url(fonts/FixelDisplay-Medium.736d6950.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: FixelDisplay-Bold;
-  src: url(../fonts/FixelDisplay-Bold.affddbf2.ttf) format("truetype"),
-    url(../fonts/FixelDisplay-Bold.2ed3e38a.woff2) format("woff2");
+  src: url(fonts/FixelDisplay-Bold.affddbf2.ttf) format("truetype"),
+    url(fonts/FixelDisplay-Bold.2ed3e38a.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: NovaPoshta-Regular;
-  src: url(../fonts/NovaPoshta-Regular.35032c18.ttf) format("truetype"),
-    url(../fonts/NovaPoshta-Regular.2bff5a59.woff2) format("woff2");
+  src: url(fonts/NovaPoshta-Regular.35032c18.ttf) format("truetype"),
+    url(fonts/NovaPoshta-Regular.2bff5a59.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: NovaPoshta-Medium;
-  src: url(../fonts/NovaPoshta-Medium.85f1bd8a.ttf) format("truetype"),
-    url(../fonts/NovaPoshta-Medium.047f06d3.woff2) format("woff2");
+  src: url(fonts/NovaPoshta-Medium.85f1bd8a.ttf) format("truetype"),
+    url(fonts/NovaPoshta-Medium.047f06d3.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: NovaPoshta-Bold;
-  src: url(../fonts/NovaPoshta-Bold.90989985.ttf) format("truetype"),
-    url(../fonts/NovaPoshta-Bold.2fe771b1.woff2) format("woff2");
+  src: url(fonts/NovaPoshta-Bold.90989985.ttf) format("truetype"),
+    url(fonts/NovaPoshta-Bold.2fe771b1.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

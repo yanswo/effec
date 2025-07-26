@@ -102,26 +102,6 @@
       </div>
     </header>
 
-    <!-- Menu Mobile Overlay -->
-    <div id="mobileMenu" class="mobile-menu">
-      <div class="mobile-menu-header">
-        <span class="mobile-menu-logo">NovaPay</span>
-        <button
-          id="closeMobileMenu"
-          class="mobile-menu-close"
-          aria-label="Fechar menu"
-        >
-          &times;
-        </button>
-      </div>
-      <nav class="mobile-menu-nav">
-        <a href="index.html">Serviços</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="suporte.html">Suporte</a>
-        <a href="#" class="mobile-menu-app-btn">Obtenha o app</a>
-      </nav>
-    </div>
-
     <main class="main">
       <div class="Hero_hero__Yk6bS" data-header-theme="light">
         <div class="Hero_hero-block__679Zy Hero_hero-block--bottom__5mA84">
@@ -605,28 +585,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      const menuBtn = document.querySelector(".b-actions-btn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const closeBtn = document.getElementById("closeMobileMenu");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.add("active");
-        document.body.style.overflow = "hidden";
-      });
-
-      closeBtn.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
-        document.body.style.overflow = "";
-      });
-
-      // Fechar ao clicar fora do menu (overlay)
-      mobileMenu.addEventListener("click", (e) => {
-        if (e.target === mobileMenu) {
-          mobileMenu.classList.remove("active");
-          document.body.style.overflow = "";
-        }
-      });
-    </script>
   </body>
 </html>
