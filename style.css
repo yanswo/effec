@@ -2040,9 +2040,11 @@ strong {
   min-height: 208px;
   width: 100%;
   max-width: 480px;
-  opacity: 0;
-  transform: translateX(150px);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: visible;
 }
 
 .BenefitsCard_benefits-card__3BF4Z:nth-child(1),
@@ -2079,22 +2081,32 @@ strong {
   width: 100%;
   height: 100%;
   z-index: 1;
-  justify-content: flex-start;
-}
-.BenefitsCard_benefits-card_icon__qPdWo.lazy-load-image-loaded {
+  display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
+  pointer-events: none;
 }
 .BenefitsCard_benefits-card_icon-inner__2gbWg {
   display: block;
+  height: 100%;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .BenefitsCard_benefits-card_icon-inner__2gbWg {
+    width: 260px;
+  }
 }
 .BenefitsCard_benefits-card_text__sct3L {
   position: relative;
   z-index: 2;
-  max-width: 174px;
 }
-@media only screen and (min-width: 768px) {
-  .BenefitsCard_benefits-card_text__sct3L {
-    max-width: 340px;
+@media (min-width: 768px) {
+  .BenefitsCard_benefits-card_icon-inner__2gbWg {
+    width: 240px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -3511,9 +3523,9 @@ strong {
   min-height: 67.5vw;
   color: #fff;
   width: 100%;
-  opacity: 0;
-  transform: translateY(100px);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 @media only screen and (min-width: 481px) {
   .IntroCard_intro-card__HkxI_ {

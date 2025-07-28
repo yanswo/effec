@@ -379,40 +379,76 @@
           <div class="Benefits_benefits-cards__uatSu d-f fd-c ai-c">
             <div
               class="BenefitsCard_benefits-card__3BF4Z BenefitsCard_benefits-card-bg-violet__hR_f7"
+              style="position: relative; overflow: visible"
             >
-              <span class="BenefitsCard_benefits-card_icon__qPdWo d-f ia-fe"
-                ><img
-                  src="images/icon-1.png"
-                  alt="Ícone de taxas baixas"
+              <span class="BenefitsCard_benefits-card_icon__qPdWo">
+                <span
                   class="BenefitsCard_benefits-card_icon-inner__2gbWg"
-              /></span>
-              <div class="BenefitsCard_benefits-card_text__sct3L">
-                Taxas baixas com preços transparentes
+                  style="
+                    background-image: url('images/moedas.png');
+                    height: 100%;
+                    width: 600px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    opacity: 0.7;
+                  "
+                ></span>
+              </span>
+              <div
+                class="BenefitsCard_benefits-card_text__sct3L"
+                style="position: relative; z-index: 2"
+              >
+                Time interno de recuperação de vendas.
               </div>
             </div>
             <div
               class="BenefitsCard_benefits-card__3BF4Z BenefitsCard_benefits-card-bg-violet-light__QoILj"
+              style="position: relative; overflow: visible"
             >
-              <span class="BenefitsCard_benefits-card_icon__qPdWo d-f ia-fe"
-                ><img
-                  src="images/icon-2.png"
-                  alt="Ícone de suporte"
+              <span class="BenefitsCard_benefits-card_icon__qPdWo">
+                <span
                   class="BenefitsCard_benefits-card_icon-inner__2gbWg"
-              /></span>
-              <div class="BenefitsCard_benefits-card_text__sct3L">
-                Suporte ao vivo multilíngue
+                  style="
+                    background-image: url('images/planeta.png');
+                    height: 100%;
+                    width: 500px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    opacity: 0.7;
+                  "
+                ></span>
+              </span>
+              <div
+                class="BenefitsCard_benefits-card_text__sct3L"
+                style="position: relative; z-index: 2"
+              >
+                Transações internacionais.
               </div>
             </div>
             <div
               class="BenefitsCard_benefits-card__3BF4Z BenefitsCard_benefits-card-bg-sky-blue__SfsoK"
+              style="position: relative; overflow: visible"
             >
-              <span class="BenefitsCard_benefits-card_icon__qPdWo d-f ia-fe"
-                ><img
-                  src="images/icon-3.png"
-                  alt="Ícone de segurança"
+              <span class="BenefitsCard_benefits-card_icon__qPdWo">
+                <span
                   class="BenefitsCard_benefits-card_icon-inner__2gbWg"
-              /></span>
-              <div class="BenefitsCard_benefits-card_text__sct3L">
+                  style="
+                    background-image: url('images/icon-3.png');
+                    height: 100%;
+                    width: 200px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    opacity: 0.7;
+                  "
+                ></span>
+              </span>
+              <div
+                class="BenefitsCard_benefits-card_text__sct3L"
+                style="position: relative; z-index: 2"
+              >
                 Totalmente seguro e em conformidade com GDPR/AML
               </div>
             </div>
@@ -425,6 +461,7 @@
       <button
         type="button"
         class="Button_button-wrapper__yDmDc Button_button-size-large__ElqqP Button_button-color-violet__oJ_Pm Button_button-size-large-only-icon__d6SgV d-if jc-c ai-c cur--pointer button-wrapper"
+        id="scrollToTopBtn"
       >
         <span class="Button_button-hover-line__TTegF"></span>
         <div class="Button_icon__V2EYJ d-f ai-c jc-c">
@@ -765,6 +802,32 @@
             }
           });
         });
+
+      // Botão de scroll para o topo
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Mostrar/ocultar botão baseado no scroll
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.style.display = "flex";
+          scrollToTopBtn.style.opacity = "1";
+        } else {
+          scrollToTopBtn.style.opacity = "0";
+          setTimeout(() => {
+            if (scrollToTopBtn.style.opacity === "0") {
+              scrollToTopBtn.style.display = "none";
+            }
+          }, 300);
+        }
+      });
+
+      // Scroll suave para o topo quando clicado
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
   </body>
 </html>

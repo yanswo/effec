@@ -362,6 +362,33 @@
       </div>
     </main>
 
+    <div class="ButtonScrollTop_button-wrapper__1Rz9_">
+      <button
+        type="button"
+        class="Button_button-wrapper__yDmDc Button_button-size-large__ElqqP Button_button-color-violet__oJ_Pm Button_button-size-large-only-icon__d6SgV d-if jc-c ai-c cur--pointer button-wrapper"
+        id="scrollToTopBtn"
+      >
+        <span class="Button_button-hover-line__TTegF"></span>
+        <div class="Button_icon__V2EYJ d-f ai-c jc-c">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 5.83203L14 22.1654M14 5.83203L7 12.832M14 5.83203L21 12.832"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+      </button>
+    </div>
+
     <footer
       class="AppFooter_footer__4WEi3 footer"
       data-header-theme="light"
@@ -597,6 +624,32 @@
           mobileMenu.classList.remove("active");
           document.body.style.overflow = "";
         }
+      });
+
+      // Botão de scroll para o topo
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Mostrar/ocultar botão baseado no scroll
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.style.display = "flex";
+          scrollToTopBtn.style.opacity = "1";
+        } else {
+          scrollToTopBtn.style.opacity = "0";
+          setTimeout(() => {
+            if (scrollToTopBtn.style.opacity === "0") {
+              scrollToTopBtn.style.display = "none";
+            }
+          }, 300);
+        }
+      });
+
+      // Scroll suave para o topo quando clicado
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
     </script>
   </body>
