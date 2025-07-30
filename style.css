@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* ===== ESTILOS BASE E RESET (de dc425ca0aa1e00c0.css) ===== */
 a,
 abbr,
@@ -231,8 +233,7 @@ body {
   overflow-x: hidden;
   background: #edeff1;
   color: #464b53;
-  font-family: FixelDisplay-Regular, NovaPoshta-Regular, Arial, Helvetica,
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -274,7 +275,7 @@ img {
 .rich-text h4,
 .rich-text h5,
 .rich-text h6 {
-  font-family: NovaPoshta-Medium, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 .rich-text h1,
@@ -431,7 +432,7 @@ img {
 .h4,
 .h5,
 .h6 {
-  font-family: FixelDisplay-Bold, NovaPoshta-Bold, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 .h1 {
@@ -522,7 +523,7 @@ img {
   }
 }
 strong {
-  font-family: FixelDisplay-Bold, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .d-f {
   display: flex;
@@ -2067,15 +2068,15 @@ strong {
   }
 }
 .BenefitsCard_benefits-card-bg-violet__hR_f7 {
-  background: linear-gradient(-35deg, #1e3a8a, #1e40af);
+  background: linear-gradient(-35deg, #15295f, #1e40af);
   background-size: cover;
 }
 .BenefitsCard_benefits-card-bg-violet-light__QoILj {
-  background: linear-gradient(-35deg, #1e40af, #3b82f6);
+  background: linear-gradient(-35deg, #132a74, #3b82f6);
   background-size: cover;
 }
 .BenefitsCard_benefits-card-bg-sky-blue__SfsoK {
-  background: linear-gradient(-35deg, #3b82f6, #60a5fa);
+  background: linear-gradient(-35deg, #042a68, #60a5fa);
   background-size: cover;
 }
 .BenefitsCard_benefits-card_icon__qPdWo {
