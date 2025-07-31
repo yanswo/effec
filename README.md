@@ -1,4 +1,6 @@
-# Fontes do Projeto NovaPay
+# Fontes do Projeto NovaEffectus
+
+link: https://yanswo.github.io/effec/
 
 ## Fontes Disponíveis
 
