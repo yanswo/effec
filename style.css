@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* ===== ESTILOS BASE E RESET (de dc425ca0aa1e00c0.css) ===== */
 a,
 abbr,
 acronym,
@@ -231,7 +230,7 @@ body {
   min-height: 100%;
   letter-spacing: 0;
   overflow-x: hidden;
-  background: transparent;
+  background: white;
   color: #464b53;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -683,7 +682,6 @@ strong {
   display: none;
 }
 
-/* ===== ESTILOS PRINCIPAIS (de 15c171c444795fb1.css) ===== */
 .NotFoundScreen_not-found_container__SEM43 {
   min-height: 100dvh;
   flex-direction: column;
@@ -1668,21 +1666,32 @@ strong {
   }
 }
 .Logo_logo__dIGtw {
-  display: block;
-  width: 107px;
-  height: 20px;
-  flex: none;
+  position: relative;
+  width: 180px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   .Logo_logo__dIGtw {
-    width: 160px;
-    height: 30px;
+    width: 180px;
+    height: 70px;
   }
 }
 .Logo_logo-image__8_8BV {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 150px;
+  width: auto;
+
+  padding-bottom: 0;
+  max-width: none;
   display: block;
-  max-width: 100%;
-  max-height: 100%;
 }
 .Menu_menu__hKhTR {
   position: absolute;
@@ -1870,7 +1879,6 @@ strong {
   transform: translateX(-2em);
 }
 
-/* Animação de hover para o botão do menu */
 .Actions_actions-btn__f1BSz:hover {
   transform: scale(1.1);
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2121,7 +2129,6 @@ strong {
   }
 }
 
-/* Ajustes específicos para mobile - moedas3.png */
 @media (max-width: 767px) {
   .BenefitsCard_benefits-card__3BF4Z:first-child {
     position: relative !important;
@@ -3403,7 +3410,6 @@ strong {
   vertical-align: top;
 }
 
-/* Configurações específicas para sobre.html e suporte.html */
 .sobre.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
 .suporte.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
 .sobre.html
@@ -3439,10 +3445,9 @@ strong {
     bottom: 0;
     width: 65%;
     justify-content: flex-start;
-    transform: translateX(30%);
+    transform: translateX(20%);
   }
 
-  /* Desktop para sobre.html e suporte.html */
   .sobre.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
   .suporte.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
   .sobre.html
@@ -3465,10 +3470,9 @@ strong {
     width: calc(50vw + 200px);
     height: 100%;
     top: 0;
-    transform: translateX(40%);
+    transform: translateX(25%);
   }
 
-  /* Desktop grande para sobre.html e suporte.html */
   .sobre.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
   .suporte.html .Hero_hero-block--bottom__5mA84 .Hero_hero-block-icon__RI_Z2,
   .sobre.html
@@ -3554,7 +3558,6 @@ strong {
   margin-top: 60%;
 }
 
-/* Mobile: texto em cima para sobre.html e suporte.html */
 .sobre.html .Hero_hero-block-content__ll8ds,
 .suporte.html .Hero_hero-block-content__ll8ds {
   margin-top: 0 !important;
@@ -3578,7 +3581,6 @@ strong {
     margin-top: 0;
   }
 
-  /* Desktop: texto em cima para sobre.html e suporte.html */
   .sobre.html .Hero_hero-block-content__ll8ds,
   .suporte.html .Hero_hero-block-content__ll8ds {
     margin-top: 0 !important;
@@ -3646,49 +3648,65 @@ strong {
     height: auto;
   }
 }
-/* Mobile layout - imagem embaixo, textos em cima */
 @media only screen and (max-width: 767px) {
   .Hero_hero-block__679Zy {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
+    justify-content: space-between;
     height: 100vh !important;
-    position: relative;
+    padding-top: 100px;
+    padding-bottom: 20px;
   }
 
   .Hero_hero-block-wrapper__KpLHA {
     order: 1;
-    flex: 0 0 auto;
+    height: auto !important;
+    width: 100% !important;
     display: flex;
-    align-items: flex-start;
     justify-content: flex-start;
-    padding: 20px;
-    z-index: 2;
-    position: relative;
-    height: 50vh;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 0 !important;
   }
 
   .Hero_hero-block-content__ll8ds {
+    width: 100% !important;
+    max-width: 100% !important;
     text-align: left;
     align-items: flex-start !important;
-    justify-content: flex-start !important;
+    margin-top: 0 !important;
   }
 
   .Hero_hero-block-icon__RI_Z2 {
     order: 2;
-    flex: 1;
-    position: relative;
-    height: 50vh;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative !important;
+    width: 95% !important;
+    height: auto !important;
+    max-height: 60%;
+    align-self: flex-end;
+    display: flex !important;
+    justify-content: flex-end !important;
+    transform: none !important;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    margin-bottom: 0;
   }
 
   .Hero_hero-block-icon-inner__jk58L {
+    object-fit: contain;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+  }
+
+  .h1 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .Hero_hero-block-text__kzOZT {
+    font-size: 16px;
   }
 }
 
@@ -3710,38 +3728,72 @@ strong {
     display: inline-flex;
   }
 }
+
+.IntroCards_intro-cards-content__BK1uU {
+  align-items: stretch;
+}
+
 .IntroCard_intro-card__HkxI_ {
   position: relative;
-  border: none;
   border-radius: 32px;
   overflow: hidden;
   padding: 0;
-  min-height: 67.5vw;
-  color: #fff;
   width: 100%;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
   background: transparent;
+  border: none;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.IntroCard_intro-card__HkxI_:nth-child(odd),
+.IntroCard_intro-card__HkxI_:nth-child(2n) {
+  background: transparent;
+  border: none;
+}
+
+.IntroCard_intro-card_image__iFjXI {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.IntroCard_intro-card_image-inner__bLNdF {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
 @media only screen and (min-width: 481px) {
   .IntroCard_intro-card__HkxI_ {
-    min-height: 322px;
-    width: 446px;
+    min-height: 52px;
+    width: 100%;
+    max-width: 446px;
   }
 }
 @media only screen and (min-width: 768px) {
   .IntroCard_intro-card__HkxI_ {
-    min-height: 235px;
-    width: 318px;
-    transition-delay: var(--transition-delay);
+    min-height: 50px;
+    width: calc(50% - 10px);
+    max-width: none;
+  }
+  .IntroCards_intro-cards-content__BK1uU {
+    flex-direction: row;
+    gap: 10px;
   }
 }
 @media only screen and (min-width: 1025px) {
   .IntroCard_intro-card__HkxI_ {
-    min-height: 368px;
-    max-width: 498px;
+    min-height: 58px;
     width: calc(50% - 16px);
+  }
+  .IntroCards_intro-cards-content__BK1uU {
+    gap: 32px;
   }
 }
 .IntroCard_intro-card__HkxI_:nth-child(odd) {
@@ -4366,7 +4418,6 @@ strong {
   background: #fff;
 }
 
-/* ===== ESTILOS ADICIONAIS (de d393aabd27919191.css) ===== */
 .Menu_menu__Kiago {
   flex-direction: column;
   gap: 8px;
@@ -4385,7 +4436,6 @@ strong {
   }
 }
 
-/* ===== MENU MOBILE OVERLAY ===== */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -4600,7 +4650,6 @@ strong {
   }
 }
 
-/* Força a atualização do botão mobile */
 .mobile-menu .mobile-menu-app-btn {
   background: #ffffff !important;
   color: #0f207a !important;
@@ -4624,7 +4673,6 @@ strong {
     0 0 40px rgba(15, 32, 122, 0.3), 0 12px 25px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Regra adicional para garantir que o texto não seja maiúsculo */
 a.mobile-menu-app-btn {
   text-transform: none !important;
 }
@@ -4633,9 +4681,6 @@ a.mobile-menu-app-btn:hover {
   text-transform: none !important;
 }
 
-/* ===== ANIMAÇÕES E EFEITOS DE FLUIDEZ ===== */
-
-/* 1. Animação de Rotações para Ícones de Carregamento */
 @keyframes button-rotate {
   to {
     transform: rotate(1turn);
@@ -4646,7 +4691,6 @@ a.mobile-menu-app-btn:hover {
   animation: button-rotate 1s linear infinite;
 }
 
-/* 2. Efeito Wave (Onda) para Botões */
 @keyframes wave-animation {
   0% {
     transform: translate(-50%, -50%) scaleX(1) scaleY(1);
@@ -4688,7 +4732,6 @@ a.mobile-menu-app-btn:hover {
   animation: wave-animation 0.6s ease-out;
 }
 
-/* 3. Efeito Hover Line para Botões */
 .Button_button-hover-line__TTegF {
   position: absolute;
   inset: -1px;
@@ -4715,7 +4758,6 @@ a.mobile-menu-app-btn:hover {
   left: -130%;
 }
 
-/* 4. Transições Suaves para Todos os Elementos Interativos */
 .Button_button-wrapper__yDmDc,
 .FaqItem_faq-item_head__tov65,
 .Menu_menu-link__qQYfj,
@@ -4724,7 +4766,6 @@ a.mobile-menu-app-btn:hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 5. Efeito de Escala no Hover para Cards */
 .BenefitsCard_benefits-card__3BF4Z,
 .IntroCard_intro-card__HkxI_,
 .Feature_feature___saaA {
@@ -4733,13 +4774,11 @@ a.mobile-menu-app-btn:hover {
 }
 
 .BenefitsCard_benefits-card__3BF4Z:hover,
-.IntroCard_intro-card__HkxI_:hover,
 .Feature_feature___saaA:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* 6. Animação de Fade para Imagens */
 .lazy-load-image-background.blur {
   filter: blur(15px);
   transition: filter 0.3s ease;
@@ -4758,7 +4797,6 @@ a.mobile-menu-app-btn:hover {
   opacity: 1;
 }
 
-/* 7. Efeito de Pulse para Elementos de Destaque */
 @keyframes pulse-glow {
   0%,
   100% {
@@ -4773,7 +4811,6 @@ a.mobile-menu-app-btn:hover {
   animation: pulse-glow 2s infinite;
 }
 
-/* 8. Animação de Slide para Menus */
 .Menu_menu__hKhTR {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
     opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -4784,7 +4821,6 @@ a.mobile-menu-app-btn:hover {
   opacity: 1;
 }
 
-/* 9. Efeito de Bounce para Botões de Ação */
 @keyframes bounce-in {
   0% {
     transform: scale(0.3);
@@ -4806,7 +4842,6 @@ a.mobile-menu-app-btn:hover {
   animation: bounce-in 0.3s ease-out;
 }
 
-/* 10. Transições Suaves para Gradientes */
 .Hero_hero__Yk6bS,
 .Benefits_benefits__8wH2p,
 .Features_features__AmDIU {
@@ -4814,14 +4849,12 @@ a.mobile-menu-app-btn:hover {
   transition: background-position 0.5s ease;
 }
 
-/* 11. Efeito de Parallax Suave */
 .Hero_hero-block-icon__RI_Z2,
 .Features_features-top-icon__XM8m_,
 .Features_features-bottom-icon__33zPe {
   transition: transform 0.1s ease-out;
 }
 
-/* 12. Animação de Loading para Conteúdo */
 @keyframes content-fade-in {
   from {
     opacity: 0;
@@ -4839,18 +4872,15 @@ a.mobile-menu-app-btn:hover {
   animation: content-fade-in 0.6s ease-out;
 }
 
-/* 13. Efeito de Hover para Links */
 a:hover,
 .Button_button-wrapper__yDmDc:hover {
   transform: translateY(-1px);
 }
 
-/* 14. Animação de Scroll Suave */
 html {
   scroll-behavior: smooth;
 }
 
-/* 15. Efeito de Glassmorphism para Cards */
 .BenefitsCard_benefits-card__3BF4Z,
 .IntroCard_intro-card__HkxI_ {
   backdrop-filter: blur(10px);
@@ -4858,7 +4888,6 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 16. Animação de Typing para Títulos */
 @keyframes typing {
   from {
     width: 0;
@@ -4875,7 +4904,6 @@ html {
   animation: typing 2s steps(40, end);
 }
 
-/* 17. Efeito de Shimmer para Botões */
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -4908,14 +4936,12 @@ html {
   animation: shimmer 1.5s infinite;
 }
 
-/* 18. Transições Suaves para Estados de Loading */
 .Button_button-wrapper__yDmDc:disabled {
   opacity: 0.6;
   transform: scale(0.98);
   transition: all 0.2s ease;
 }
 
-/* 19. Efeito de Focus Melhorado */
 .Button_button-wrapper__yDmDc:focus,
 a:focus,
 button:focus {
@@ -4924,7 +4950,6 @@ button:focus {
   transition: outline 0.2s ease;
 }
 
-/* 20. Animação de Entrada para Seções */
 @keyframes slide-up-fade {
   from {
     opacity: 0;
@@ -4942,7 +4967,6 @@ button:focus {
   animation: slide-up-fade 0.8s ease-out;
 }
 
-/* 21. Efeito de Hover para Ícones */
 .Button_icon__V2EYJ,
 .FaqItem_faq-item_icon__LCW_B {
   transition: transform 0.2s ease, color 0.2s ease;
@@ -4953,7 +4977,6 @@ button:focus {
   transform: scale(1.1);
 }
 
-/* 22. Animação de Progresso para Barras */
 @keyframes progress-fill {
   from {
     width: 0%;
@@ -4967,31 +4990,25 @@ button:focus {
   animation: progress-fill 2s ease-out;
 }
 
-/* 23. Efeito de Magnetic para Botões */
 .Button_button-wrapper__yDmDc {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-/* 24. Transições Suaves para Cores */
 * {
   transition: color 0.2s ease, background-color 0.2s ease,
     border-color 0.2s ease;
 }
 
-/* 25. Efeito de Sombra Dinâmica */
-.BenefitsCard_benefits-card__3BF4Z,
-.IntroCard_intro-card__HkxI_ {
+.BenefitsCard_benefits-card__3BF4Z {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
-.BenefitsCard_benefits-card__3BF4Z:hover,
-.IntroCard_intro-card__HkxI_:hover {
+.BenefitsCard_benefits-card__3BF4Z:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Features background icon (bottom) */
 .Features_features-bottom-icon__33zPe {
   position: absolute;
   z-index: 0;
@@ -5022,4 +5039,32 @@ button:focus {
     right: -63px;
     bottom: 3px;
   }
+}
+
+.IntroCards_intro-cards-content__BK1uU {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.IntroCard_intro-card__HkxI_ {
+  flex: 1;
+  max-width: 450px;
+  aspect-ratio: 4 / 5;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: white !important;
+}
+
+.IntroCard_intro-card__HkxI_ .IntroCard_intro-card_image-inner__bLNdF {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.IntroCards_intro-cards-content__BK1uU
+  > div:nth-child(2)
+  .IntroCard_intro-card_image-inner__bLNdF {
+  object-position: center 68%;
 }
