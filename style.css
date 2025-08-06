@@ -3133,7 +3133,10 @@ strong {
   width: 100%;
 }
 .Features_features-icon__b6miQ {
-  max-height: 100%;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  max-height: none;
 }
 .Features_features-content__sbFqK {
   position: relative;
@@ -5013,8 +5016,8 @@ button:focus {
   position: absolute;
   z-index: 0;
   bottom: 0;
-  width: 617px;
-  right: -77px;
+  width: 800px;
+  right: -150px;
   height: 100%;
   display: flex !important;
   align-items: flex-end;
@@ -5028,15 +5031,15 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
   .Features_features-bottom-icon__33zPe {
-    width: 1014px;
-    right: -35px;
+    width: 1300px;
+    right: -100px;
     bottom: 18px;
   }
 }
 @media only screen and (min-width: 1025px) {
   .Features_features-bottom-icon__33zPe {
-    width: 1353px;
-    right: -63px;
+    width: 1800px;
+    right: -200px;
     bottom: 3px;
   }
 }
@@ -5067,4 +5070,94 @@ button:focus {
   > div:nth-child(2)
   .IntroCard_intro-card_image-inner__bLNdF {
   object-position: center 68%;
+}
+
+.Hero_hero-block-image--suporte {
+  position: relative;
+  overflow: hidden;
+}
+
+.Hero_hero-block-image-inner--suporte {
+  object-fit: cover;
+  object-position: center bottom;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.Hero_hero-block-image-inner--suporte:hover {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 767px) {
+  .Hero_hero-block-image-inner--suporte {
+    object-position: center 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Hero_hero-block-image-inner--suporte {
+    object-position: center 75%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .Hero_hero-block-image-inner--suporte {
+    object-position: center 80%;
+  }
+}
+
+.Hero_hero-block-icon--suporte {
+  position: absolute;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.Hero_hero-block-icon-inner--suporte {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Hero_hero-block-icon-inner--suporte:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Hero_hero-block-icon--suporte {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Hero_hero-block-icon--suporte {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .Hero_hero-block-icon--suporte {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#email-icon {
+  border: 5px solid black;
 }

@@ -50,14 +50,7 @@
                 ><span class="link-label">Serviços</span></a
               >
             </li>
-            <li>
-              <a
-                target="_self"
-                class="Menu_menu-link__qQYfj b-menu-link"
-                href="sobre.html"
-                ><span class="link-label">Sobre</span></a
-              >
-            </li>
+            <li></li>
             <li>
               <a
                 target="_self"
@@ -122,7 +115,6 @@
       </div>
       <nav class="mobile-menu-nav">
         <a href="#">Serviços</a>
-        <a href="sobre.html">Sobre</a>
         <a href="suporte.html">Suporte</a>
         <a href="#" class="mobile-menu-app-btn">Baixe o app</a>
       </nav>
@@ -287,7 +279,7 @@
                 /></span>
                 <div class="Features_features-block_content__rE1tn">
                   <h2 class="Features_features-block_title__eqzkN h2">
-                    Baixe o app!
+                    Cadastre-se!
                   </h2>
                   <div class="Features_features-block_text__3rVz6">
                     <p>
@@ -307,7 +299,7 @@
                 /></span>
                 <div class="Features_features-block_content__rE1tn">
                   <h2 class="Features_features-block_title__eqzkN h2">
-                    Controle Total
+                    Alta conversão.
                   </h2>
                   <div class="Features_features-block_text__3rVz6">
                     <p>
@@ -326,7 +318,7 @@
                 /></span>
                 <div class="Features_features-block_content__rE1tn">
                   <h2 class="Features_features-block_title__eqzkN h2">
-                    Pagamentos Seguros
+                    Pagamentos Seguros.
                   </h2>
                   <div class="Features_features-block_text__3rVz6">
                     <p>
@@ -710,28 +702,7 @@
             </div>
           </div>
         </div>
-        <div class="LogosAndSocials_panel__fqUEl d-f jc-sb">
-          <div class="LogosAndSocials_panel-logos__bNYtg">
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/logotipo.png" alt="NovaPay Logo"
-            /></a>
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/ONDATO-logo.svg" alt="Ondato Logo"
-            /></a>
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/quicko-logo-white.svg" alt="Quicko Logo"
-            /></a>
-          </div>
-        </div>
+
         <div class="Copyright_copyright__S3pOk">
           <p>© 2025 NovaPay EU UAB. Todos os direitos reservados.</p>
           <p>
@@ -751,34 +722,23 @@
       </div>
     </footer>
     <script>
-      // Seleciona os elementos essenciais do menu
       const menuBtn = document.querySelector(".Actions_actions-btn__f1BSz");
       const mobileMenu = document.getElementById("mobileMenu");
       const closeBtn = document.getElementById("closeMobileMenu");
 
-      // Função para abrir o menu
       function openMenu() {
-        // Adiciona a classe que anima o botão para o formato "X"
         menuBtn.classList.add("Actions_btn--open__LKNCg");
-        // Adiciona a classe que mostra o menu mobile
         mobileMenu.classList.add("active");
-        // Trava o scroll da página
         document.body.style.overflow = "hidden";
       }
 
-      // Função para fechar o menu
       function closeMenu() {
-        // Remove a classe que anima o botão, voltando ao normal
         menuBtn.classList.remove("Actions_btn--open__LKNCg");
-        // Remove a classe que mostra o menu mobile
         mobileMenu.classList.remove("active");
-        // Libera o scroll da página
         document.body.style.overflow = "";
       }
 
-      // Evento de clique no botão hamburguer
       menuBtn.addEventListener("click", () => {
-        // Verifica se o menu já está aberto para decidir se abre ou fecha
         if (mobileMenu.classList.contains("active")) {
           closeMenu();
         } else {
@@ -786,21 +746,16 @@
         }
       });
 
-      // Evento de clique no botão de fechar (dentro do menu)
       closeBtn.addEventListener("click", () => {
         closeMenu();
       });
 
-      // Evento para fechar o menu se clicar fora dele
       mobileMenu.addEventListener("click", (e) => {
         if (e.target === mobileMenu) {
           closeMenu();
         }
       });
 
-      // O resto do seu código de scroll e outros pode continuar aqui...
-
-      // Animação dos cards
       document
         .querySelectorAll(".IntroCard_intro-card__HkxI_")
         .forEach((card) => {
@@ -830,7 +785,6 @@
           });
         });
 
-      // Animação dos benefits
       document
         .querySelectorAll(".BenefitsCard_benefits-card__3BF4Z")
         .forEach((card) => {
@@ -860,7 +814,6 @@
           });
         });
 
-      // Botão de voltar ao topo
       const scrollToTopBtn = document.getElementById("scrollToTopBtn");
       window.addEventListener("scroll", () => {
         if (window.pageYOffset > 300) {

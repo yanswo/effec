@@ -22,7 +22,7 @@
 
     <link
       rel="icon"
-      href="images/favicon.ico"
+      href="images/favicon.png"
       type="image/x-icon"
       sizes="192x192"
     />
@@ -50,14 +50,7 @@
                 ><span class="link-label">Serviços</span></a
               >
             </li>
-            <li>
-              <a
-                target="_self"
-                class="Menu_menu-link__qQYfj b-menu-link"
-                href="sobre.html"
-                ><span class="link-label">Sobre</span></a
-              >
-            </li>
+            <li></li>
             <li>
               <a
                 target="_self"
@@ -75,7 +68,7 @@
           >
             <span class="Button_button-hover-line__TTegF"></span>
             <span class="Button_button-text__eKp_Z cur--pointer button-text d-f"
-              >Obtenha o app</span
+              >Baixe o app</span
             >
           </a>
         </nav>
@@ -88,7 +81,7 @@
           >
             <span class="Button_button-hover-line__TTegF"></span>
             <span class="Button_button-text__eKp_Z cur--pointer button-text d-f"
-              >Obtenha o app</span
+              >Baixe o app</span
             >
           </a>
           <button
@@ -102,23 +95,44 @@
       </div>
     </header>
 
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a class="Logo_logo__dIGtw b-logo d-f ai-c jc-c" href="index.html">
+          <img
+            class="Logo_logo-image__8_8BV"
+            src="images/logotipo.png"
+            alt="logo"
+            style="height: 160px"
+          />
+        </a>
+        <button
+          id="closeMobileMenu"
+          class="mobile-menu-close"
+          aria-label="Fechar menu"
+        >
+          &times;
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Serviços</a>
+        <a href="suporte.html">Suporte</a>
+        <a href="#" class="mobile-menu-app-btn">Baixe o App</a>
+      </nav>
+    </div>
+
     <main class="main">
       <div class="Hero_hero__Yk6bS" data-header-theme="light">
         <div class="Hero_hero-block__679Zy Hero_hero-block--bottom__5mA84">
-          <div class="Hero_hero-block-image__nBlzn">
-            <img
-              alt="suporte"
-              class="Hero_hero-block-image-inner__VF_PP"
-              src="images/image-suporte.jpg"
-            />
-          </div>
+          <div
+            class="Hero_hero-block-image__nBlzn Hero_hero-block-image--suporte"
+          ></div>
           <span
-            class="Hero_hero-block-icon__RI_Z2 lazy-load-image-background blur lazy-load-image-loaded"
+            class="Hero_hero-block-icon__RI_Z2 Hero_hero-block-icon--suporte lazy-load-image-background blur lazy-load-image-loaded"
             style="display: flex"
           >
             <img
               alt="icon"
-              class="Hero_hero-block-icon-inner__jk58L"
+              class="Hero_hero-block-icon-inner__jk58L Hero_hero-block-icon-inner--suporte"
               src="https://novapay.com/api/media/file/support-icon.webp"
             />
           </span>
@@ -147,53 +161,39 @@
               Fale Conosco a Qualquer Momento
             </h2>
             <div class="IntroCards_intro-cards-text__LHraX">
-              <p>Envie-nos um e-mail — geralmente respondemos em 1 dia útil.</p>
+              <p>internationalsupport@novaeffectus.com</p>
             </div>
           </div>
-          <div class="IntroCards_intro-cards-content__BK1uU d-f fw-w">
-            <div class="IntroCard_intro-card__HkxI_">
+          <div class="IntroCards_intro-cards-content__BK1uU d-f jc-c">
+            <div
+              class="IntroCard_intro-card__HkxI_"
+              style="max-width: 600px; width: 100%"
+            >
               <span
                 class="IntroCard_intro-card_image__iFjXI lazy-load-image-background blur lazy-load-image-loaded"
                 style="color: transparent; display: inline-block"
               >
                 <img
-                  alt="email-support"
+                  alt="support"
+                  id="email-icon"
                   class="IntroCard_intro-card_image-inner__bLNdF"
-                  src="https://novapay.com/api/media/file/email-support.jpg"
+                  src="images/email.png"
                 />
               </span>
-              <div class="IntroCard_intro-card_title__LZcCv">
-                Suporte por Email
-              </div>
+              <div class="IntroCard_intro-card_title__LZcCv">Suporte 24/7</div>
               <div class="IntroCard_intro-card_text__SnTZm">
                 <p>
-                  Tem uma pergunta não urgente? Escreva para
+                  <strong>Email:</strong> Tem uma pergunta não urgente? Escreva
+                  para
                   <a href="mailto:сс@novapay.lt"
                     ><span style="text-decoration: underline"
                       >сс@novapay.lt</span
                     ></a
                   >
                 </p>
-              </div>
-            </div>
-            <div class="IntroCard_intro-card__HkxI_">
-              <span
-                class="IntroCard_intro-card_image__iFjXI lazy-load-image-background blur lazy-load-image-loaded"
-                style="color: transparent; display: inline-block"
-              >
-                <img
-                  alt="phone-support"
-                  class="IntroCard_intro-card_image-inner__bLNdF"
-                  src="https://novapay.com/api/media/file/phone-support.jpg"
-                />
-              </span>
-              <div class="IntroCard_intro-card_title__LZcCv">
-                Suporte por Telefone
-              </div>
-              <div class="IntroCard_intro-card_text__SnTZm">
                 <p>
-                  Precisa de ajuda agora? Ligue para nossa linha de suporte
-                  24/7:
+                  <strong>Telefone:</strong> Precisa de ajuda agora? Ligue para
+                  nossa linha de suporte 24/7:
                   <a href="tel:+37052084800"
                     ><span style="text-decoration: underline"
                       >+370 5 208 4800</span
@@ -215,9 +215,7 @@
           <div
             class="Benefits_benefits-content__Vh3It Benefits_benefits-content--center__7QxUd Benefits_has-button__6SyFB"
           >
-            <h2 class="Benefits_benefits-title__jeFRW h4">
-              Fique um Passo à Frente
-            </h2>
+            <h2 class="Benefits_benefits-title__jeFRW h4">Proteja-se.</h2>
             <div class="Benefits_benefits-text__wp4yO">
               <p>
                 Aprenda a identificar golpes e proteger sua conta em nosso Guia
@@ -425,7 +423,7 @@
               <span class="Button_button-hover-line__TTegF"></span>
               <span
                 class="Button_button-text__eKp_Z cur--pointer button-text d-f"
-                >Obtenha o app</span
+                >Baixe o App</span
               >
             </a>
             <a
@@ -437,7 +435,7 @@
               <span class="Button_button-hover-line__TTegF"></span>
               <span
                 class="Button_button-text__eKp_Z cur--pointer button-text d-f"
-                >Obtenha o app</span
+                >Baixe o app</span
               >
             </a>
           </div>
@@ -576,28 +574,7 @@
             </div>
           </div>
         </div>
-        <div class="LogosAndSocials_panel__fqUEl d-f jc-sb">
-          <div class="LogosAndSocials_panel-logos__bNYtg">
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/logo-white.svg" alt="NovaPay Logo"
-            /></a>
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/ONDATO-logo.svg" alt="Ondato Logo"
-            /></a>
-            <a
-              target="_blank"
-              class="LogosAndSocials_panel-logos-item__dl5NE"
-              href="#"
-              ><img src="images/quicko-logo-white.svg" alt="Quicko Logo"
-            /></a>
-          </div>
-        </div>
+
         <div class="Copyright_copyright__S3pOk">
           <p>© 2025 NovaPay EU UAB. Todos os direitos reservados.</p>
           <p>
@@ -617,7 +594,6 @@
       </div>
     </footer>
 
-    <!-- Mobile Menu Overlay -->
     <div id="mobileMenu" class="mobile-menu">
       <div class="mobile-menu-header">
         <a class="Logo_logo__dIGtw b-logo d-f ai-c jc-c" href="#">
@@ -631,43 +607,51 @@
       </div>
       <nav class="mobile-menu-nav">
         <a href="index.html">Serviços</a>
-        <a href="sobre.html">Sobre</a>
         <a href="suporte.html">Suporte</a>
       </nav>
       <a href="#" class="mobile-menu-app-btn">Baixe o App</a>
     </div>
     <script>
-      const menuBtn = document.querySelector(".b-actions-btn");
+      const menuBtn = document.querySelector(".Actions_actions-btn__f1BSz");
       const mobileMenu = document.getElementById("mobileMenu");
       const closeBtn = document.getElementById("closeMobileMenu");
 
-      if (menuBtn && mobileMenu && closeBtn) {
-        menuBtn.addEventListener("click", () => {
-          mobileMenu.classList.add("active");
-          document.body.style.overflow = "hidden";
-        });
-
-        closeBtn.addEventListener("click", () => {
-          mobileMenu.classList.remove("active");
-          document.body.style.overflow = "";
-        });
-
-        mobileMenu.addEventListener("click", (e) => {
-          if (e.target === mobileMenu) {
-            mobileMenu.classList.remove("active");
-            document.body.style.overflow = "";
-          }
-        });
+      function openMenu() {
+        menuBtn.classList.add("Actions_btn--open__LKNCg");
+        mobileMenu.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
-      // Intro Cards Animation - Contínua baseada em scroll (de baixo para cima)
+      function closeMenu() {
+        menuBtn.classList.remove("Actions_btn--open__LKNCg");
+        mobileMenu.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      menuBtn.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      closeBtn.addEventListener("click", () => {
+        closeMenu();
+      });
+
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          closeMenu();
+        }
+      });
+
       const introCards = document.querySelectorAll(
         ".IntroCard_intro-card__HkxI_"
       );
       console.log("IntroCards encontrados:", introCards.length);
 
       introCards.forEach((card) => {
-        // Remover transições CSS para animação suave
         card.style.transition = "none";
 
         let animationFrameId;
@@ -676,19 +660,15 @@
           const rect = card.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          // Se o card está visível na viewport
           if (rect.top < windowHeight && rect.bottom > 0) {
-            // Calcular progresso baseado na posição do card
             const progress = Math.min(
               1,
               Math.max(0, (windowHeight - rect.top) / (rect.height + 100))
             );
 
-            // Aplicar transform baseado no progresso (de baixo para cima)
             card.style.transform = `translateY(${100 * (1 - progress)}px)`;
             card.style.opacity = progress;
           } else {
-            // Se não está visível, manter fora da tela (embaixo)
             card.style.transform = "translateY(100px)";
             card.style.opacity = "0";
           }
@@ -696,10 +676,8 @@
           animationFrameId = requestAnimationFrame(animateCard);
         };
 
-        // Iniciar animação
         animationFrameId = requestAnimationFrame(animateCard);
 
-        // Cleanup quando necessário
         card.addEventListener("beforeunload", () => {
           if (animationFrameId) {
             cancelAnimationFrame(animationFrameId);
@@ -707,15 +685,12 @@
         });
       });
 
-      // Animação dos cards de benefícios: entrada e saída só ao rolar para cima
-      // Benefits Cards Animation - Contínua baseada em scroll
       const benefitsCards = document.querySelectorAll(
         ".BenefitsCard_benefits-card__3BF4Z"
       );
       console.log("BenefitsCards encontrados:", benefitsCards.length);
 
       benefitsCards.forEach((card) => {
-        // Remover transições CSS para animação suave
         card.style.transition = "none";
 
         let animationFrameId;
@@ -724,19 +699,15 @@
           const rect = card.getBoundingClientRect();
           const windowHeight = window.innerHeight;
 
-          // Se o card está visível na viewport
           if (rect.top < windowHeight && rect.bottom > 0) {
-            // Calcular progresso baseado na posição do card
             const progress = Math.min(
               1,
               Math.max(0, (windowHeight - rect.top) / (rect.height + 100))
             );
 
-            // Aplicar transform baseado no progresso
             card.style.transform = `translateX(${150 * (1 - progress)}px)`;
             card.style.opacity = progress;
           } else {
-            // Se não está visível, manter fora da tela
             card.style.transform = "translateX(150px)";
             card.style.opacity = "0";
           }
@@ -744,10 +715,8 @@
           animationFrameId = requestAnimationFrame(animateCard);
         };
 
-        // Iniciar animação
         animationFrameId = requestAnimationFrame(animateCard);
 
-        // Cleanup quando necessário
         card.addEventListener("beforeunload", () => {
           if (animationFrameId) {
             cancelAnimationFrame(animationFrameId);
@@ -755,10 +724,8 @@
         });
       });
 
-      // Botão de scroll para o topo
       const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-      // Mostrar/ocultar botão baseado no scroll
       window.addEventListener("scroll", () => {
         if (window.pageYOffset > 300) {
           scrollToTopBtn.style.display = "flex";
@@ -773,7 +740,6 @@
         }
       });
 
-      // Scroll suave para o topo quando clicado
       scrollToTopBtn.addEventListener("click", () => {
         window.scrollTo({
           top: 0,
