@@ -742,6 +742,13 @@
       document
         .querySelectorAll(".IntroCard_intro-card__HkxI_")
         .forEach((card) => {
+          // Desabilitar animação no mobile
+          if (window.innerWidth <= 767) {
+            card.style.transform = "none";
+            card.style.opacity = "1";
+            return;
+          }
+
           let animationFrameId;
           const animateCard = () => {
             const rect = card.getBoundingClientRect();
