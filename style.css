@@ -5253,3 +5253,23 @@ button:focus {
 #email-icon {
   border: 5px solid black;
 }
+
+@media only screen and (max-width: 500px) {
+  .Hero_hero-block-icon__RI_Z2 {
+    order: 2;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 48%;
+    align-self: flex-end;
+    display: flex !important
+;
+    justify-content: flex-end !important;
+    transform: none !important;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    margin-bottom: 0;
+  }
+}
